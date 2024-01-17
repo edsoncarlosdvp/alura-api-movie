@@ -4,9 +4,11 @@ namespace api_movie.Models
 {
     public class MovieModel
     {
+        [StringLength(30)]
         [Required(ErrorMessage = "O título do filme é obrigatório")]
         public String? Title { get; set; }
 
+        [StringLength(15)]
         [Required(ErrorMessage = "O genero do filme é obrigatório")]
         public String? Genere { get; set; }
 
