@@ -17,5 +17,11 @@ namespace api_movie.Controllers
             Console.WriteLine(movie.Genere);
             Console.WriteLine(movie.Duration);
         }
+
+        [HttpGet]
+        public IEnumerable<MovieModel> GetAllMovies()
+        {  
+            return movies; 
+        }
     }
 }
