@@ -27,9 +27,12 @@ namespace api_movie.Controllers
         }
 
         [HttpGet("{id}")]
-        public MovieModel? GetMovieById(int id)
+        public IActionResult? GetMovieById(int id)
         {
-            return movies.FirstOrDefault(movie => movie.Id == id);
+            var result = movies.FirstOrDefault(movie => movie.Id == id);
+
+            if(result == null) return NotFound();
+            return Ok(result);
         }
     }
 }
