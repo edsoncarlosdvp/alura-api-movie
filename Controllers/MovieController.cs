@@ -11,13 +11,12 @@ namespace api_movie.Controllers
         private static List<MovieModel> movies = new List<MovieModel>();
 
         [HttpPost]
-        public void AddMovie([FromBody] MovieModel movie)
+        public IActionResult AddMovie([FromBody] MovieModel movie)
         {
             movie.Id = id++;
             movies.Add(movie);
-            Console.WriteLine(movie.Title);
-            Console.WriteLine(movie.Genere);
-            Console.WriteLine(movie.Duration);
+
+            return CreatedAtAction(nameof(GetMovieById), new { id = movie.Id }, movie);
         }
 
         [HttpGet]
