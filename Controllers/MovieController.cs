@@ -21,9 +21,9 @@ namespace api_movie.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<MovieModel> GetAllMovies()
-        {  
-            return movies; 
+        public IEnumerable<MovieModel> GetAllMovies([FromQuery] int skip = 0, [FromQuery] int take = 30)
+        {
+            return movies.Skip(skip).Take(take);
         }
 
         [HttpGet("{id}")]
