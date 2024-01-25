@@ -10,6 +10,7 @@ namespace api_movie.Profiles
         public MovieProfile() 
         {
             CreateMap<MovieDto, MovieModel>();
+            CreateMap<UpdateMovieDto, MovieModel>();
         }
     }
 }
