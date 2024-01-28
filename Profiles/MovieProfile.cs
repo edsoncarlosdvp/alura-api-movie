@@ -1,6 +1,5 @@
 ﻿using AutoMapper;
 using api_movie.Data.Dtos;
-using apimovie.Migrations;
 using api_movie.Models;
 
 namespace api_movie.Profiles
@@ -12,6 +11,7 @@ namespace api_movie.Profiles
             CreateMap<MovieDto, MovieModel>();
             CreateMap<UpdateMovieDto, MovieModel>();
             CreateMap<MovieModel, UpdateMovieDto>();
+            CreateMap<MovieModel, ReadMovieDto>();
         }
     }
 }
