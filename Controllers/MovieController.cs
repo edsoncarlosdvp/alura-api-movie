@@ -21,6 +21,12 @@ namespace api_movie.Controllers
             _mapper = mapper;
         }
 
+        /// <summary>
+        /// Adiciona um filme ao banco de dados
+        /// </summary>
+        /// <param name="movieDto">Objeto com os campos necessários para criação de um filme</param>
+        /// <returns>IActionResults</returns>
+        /// <response code="201">Caso a inserção seja feita com sucesso</response>
         [HttpPost]
         public IActionResult AddMovie([FromBody] MovieDto movieDto)
         {
@@ -32,6 +38,12 @@ namespace api_movie.Controllers
             return CreatedAtAction(nameof(GetMovieById), new { id = movie.Id }, movie);
         }
 
+        /// <summary>
+        /// Exibe todos os filmes contidos no banco de dados
+        /// </summary>
+        /// <param name="movieDto">Objeto com os campos necessários</param>
+        /// <returns>IActionResults</returns>
+        /// <response code="201">Caso a inserção seja feita com sucesso</response>
         [HttpGet]
         public IEnumerable<ReadMovieDto> GetAllMovies(
             [FromQuery] int skip = 0,

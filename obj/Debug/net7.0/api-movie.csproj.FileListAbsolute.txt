@@ -80,3 +80,5 @@ D:\Projects\Alura\Backend\api-movie\bin\Debug\net7.0\Microsoft.AspNetCore.JsonPa
 D:\Projects\Alura\Backend\api-movie\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 D:\Projects\Alura\Backend\api-movie\bin\Debug\net7.0\Newtonsoft.Json.dll
 D:\Projects\Alura\Backend\api-movie\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll
+D:\Projects\Alura\Backend\api-movie\bin\Debug\net7.0\api-movie.xml
+D:\Projects\Alura\Backend\api-movie\obj\Debug\net7.0\api-movie.xml
