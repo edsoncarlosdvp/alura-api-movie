@@ -12,5 +12,6 @@ namespace api_movie.Data
 
         public DbSet<MovieModel> Movies { get; set; }
         public DbSet<CinemaModel> Cinemas { get; set; }
+        public DbSet<AdressModel> Adress { get; set; }
     }
 }
