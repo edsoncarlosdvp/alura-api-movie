@@ -4,13 +4,13 @@ using AutoMapper;
 
 namespace api_movie.Profiles
 {
-    public class AdressProfile : Profile
+    public class AddressProfile : Profile
     {
-        public AdressProfile()
+        public AddressProfile()
         {
-            CreateMap<AdressDto, AdressModel>();
-            CreateMap<UpdateAdressDto, AdressModel>();
-            CreateMap<AdressModel, ReadAdressDto>();
+            CreateMap<AddressDto, AddressModel>();
+            CreateMap<UpdateAddressDto, AddressModel>();
+            CreateMap<AddressModel, ReadAddressDto>();
         }
     }
 }

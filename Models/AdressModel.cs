@@ -2,7 +2,7 @@
 
 namespace api_movie.Models
 {
-    public class AdressModel
+    public class AddressModel
     {
         [Key]
         [Required]
