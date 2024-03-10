@@ -11,8 +11,8 @@ using api_movie.Data;
 namespace apimovie.Migrations
 {
     [DbContext(typeof(MovieContext))]
-    [Migration("20240213030832_Cinema and Adress")]
-    partial class CinemaandAdress
+    [Migration("20240310000755_Movie")]
+    partial class Movie
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -24,7 +24,7 @@ namespace apimovie.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("api_movie.Models.AdressModel", b =>
+            modelBuilder.Entity("api_movie.Models.AddressModel", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -41,7 +41,7 @@ namespace apimovie.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Adress");
+                    b.ToTable("Address");
                 });
 
             modelBuilder.Entity("api_movie.Models.CinemaModel", b =>
@@ -52,7 +52,7 @@ namespace apimovie.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("AdressId")
+                    b.Property<int>("AddressId")
                         .HasColumnType("int");
 
                     b.Property<string>("Nome")
@@ -61,7 +61,7 @@ namespace apimovie.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("AdressId")
+                    b.HasIndex("AddressId")
                         .IsUnique();
 
                     b.ToTable("Cinemas");
@@ -95,16 +95,16 @@ namespace apimovie.Migrations
 
             modelBuilder.Entity("api_movie.Models.CinemaModel", b =>
                 {
-                    b.HasOne("api_movie.Models.AdressModel", "Adress")
+                    b.HasOne("api_movie.Models.AddressModel", "Address")
                         .WithOne("Cinema")
-                        .HasForeignKey("api_movie.Models.CinemaModel", "AdressId")
+                        .HasForeignKey("api_movie.Models.CinemaModel", "AddressId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Adress");
+                    b.Navigation("Address");
                 });
 
-            modelBuilder.Entity("api_movie.Models.AdressModel", b =>
+            modelBuilder.Entity("api_movie.Models.AddressModel", b =>
                 {
                     b.Navigation("Cinema")
                         .IsRequired();

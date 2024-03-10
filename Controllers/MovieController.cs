@@ -1,7 +1,6 @@
 ﻿using api_movie.Data;
 using api_movie.Data.Dtos;
 using api_movie.Models;
-using apimovie.Migrations;
 using AutoMapper;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;

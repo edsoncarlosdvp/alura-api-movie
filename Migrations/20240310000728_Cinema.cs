@@ -5,13 +5,13 @@
 namespace apimovie.Migrations
 {
     /// <inheritdoc />
-    public partial class CinemaandAdress : Migration
+    public partial class Cinema : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Adress",
+                name: "Address",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -21,7 +21,22 @@ namespace apimovie.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Adress", x => x.Id);
+                    table.PrimaryKey("PK_Address", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Movies",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Title = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: false),
+                    Genere = table.Column<string>(type: "nvarchar(15)", maxLength: 15, nullable: false),
+                    Duration = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Movies", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -31,23 +46,23 @@ namespace apimovie.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Nome = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    AdressId = table.Column<int>(type: "int", nullable: false)
+                    AddressId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Cinemas", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Cinemas_Adress_AdressId",
-                        column: x => x.AdressId,
-                        principalTable: "Adress",
+                        name: "FK_Cinemas_Address_AddressId",
+                        column: x => x.AddressId,
+                        principalTable: "Address",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Cinemas_AdressId",
+                name: "IX_Cinemas_AddressId",
                 table: "Cinemas",
-                column: "AdressId",
+                column: "AddressId",
                 unique: true);
         }
 
@@ -58,7 +73,10 @@ namespace apimovie.Migrations
                 name: "Cinemas");
 
             migrationBuilder.DropTable(
-                name: "Adress");
+                name: "Movies");
+
+            migrationBuilder.DropTable(
+                name: "Address");
         }
     }
 }
