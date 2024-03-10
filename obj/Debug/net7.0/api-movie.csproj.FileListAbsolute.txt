@@ -10,6 +10,7 @@ D:\Projects\Alura\Backend\api-movie\bin\Debug\net7.0\AutoMapper.dll
 D:\Projects\Alura\Backend\api-movie\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 D:\Projects\Alura\Backend\api-movie\bin\Debug\net7.0\Azure.Core.dll
 D:\Projects\Alura\Backend\api-movie\bin\Debug\net7.0\Azure.Identity.dll
+D:\Projects\Alura\Backend\api-movie\bin\Debug\net7.0\Castle.Core.dll
 D:\Projects\Alura\Backend\api-movie\bin\Debug\net7.0\Humanizer.dll
 D:\Projects\Alura\Backend\api-movie\bin\Debug\net7.0\Microsoft.AspNetCore.JsonPatch.dll
 D:\Projects\Alura\Backend\api-movie\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
@@ -19,6 +20,7 @@ D:\Projects\Alura\Backend\api-movie\bin\Debug\net7.0\Microsoft.Data.SqlClient.dl
 D:\Projects\Alura\Backend\api-movie\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
 D:\Projects\Alura\Backend\api-movie\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 D:\Projects\Alura\Backend\api-movie\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Projects\Alura\Backend\api-movie\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Proxies.dll
 D:\Projects\Alura\Backend\api-movie\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
 D:\Projects\Alura\Backend\api-movie\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 D:\Projects\Alura\Backend\api-movie\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll

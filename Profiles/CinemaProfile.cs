@@ -10,7 +10,9 @@ namespace api_movie.Profiles
         {
             CreateMap<CinemaDto, CinemaModel>();
             CreateMap<UpdateCinemaDto, CinemaModel>();
-            CreateMap<CinemaModel, ReadCinemaDto>();
+            CreateMap<CinemaModel, ReadCinemaDto>()
+                .ForMember(CinemaDto => CinemaDto.Address,
+                    options => options.MapFrom(cinema => cinema.Address));
         }
     }
 }

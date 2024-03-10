@@ -39,7 +39,8 @@ namespace api_movie.Controllers
         [HttpGet]
         public IEnumerable<ReadCinemaDto> SearchAllCinema()
         {
-            return _mapper.Map<List<ReadCinemaDto>>(_context.Cinemas.ToList());
+            var listCinemas = _mapper.Map<List<ReadCinemaDto>>(_context.Cinemas.ToList());
+            return listCinemas;
         }
 
         [HttpGet("{id}")]
