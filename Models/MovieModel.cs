@@ -19,5 +19,7 @@ namespace api_movie.Models
         [Required]
         [Range(70, 600, ErrorMessage = "A duração do filme deve estar entre 70 e 600 minutos")]
         public int Duration { get; set; }
+
+        public virtual ICollection<SessionCinemaModel> Sessions { get; set; }
     }
 }

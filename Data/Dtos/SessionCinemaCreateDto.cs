@@ -2,5 +2,6 @@
 {
     public class SessionCinemaCreateDto
     {
+        public int MovieId { get; set; }
     }
 }
