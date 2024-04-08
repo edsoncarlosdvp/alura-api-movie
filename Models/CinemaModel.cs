@@ -11,5 +11,6 @@ namespace api_movie.Models
         public string Nome { get; set; }
         public int AddressId { get; set; }
         public virtual AddressModel Address { get; set; }
+        public virtual ICollection<SessionCinemaModel> SessionsCinema { get; set; }
     }
 }

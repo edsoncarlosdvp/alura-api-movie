@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/WLxvpdAT6V2o9xHMnAtbS6nJtTu4gaU4Vvs5L0MjqM3RArHvfK14DzN4jCqFdwnyqiLAXLkmMQn3+u5svedkQ==",
+  "dgSpecHash": "fFvJ/W03T5czqIe40iAUZYilp1Ub1YJWnwsq9u1piEoJXgyBzd7GSws3nOyl7aZCqvUkh7OQAPVaJdLClj5Ivw==",
   "success": true,
-  "projectFilePath": "D:\\Projects\\Alura\\Backend\\api-movie\\api-movie.csproj",
+  "projectFilePath": "D:\\Projects\\Alura\\Backend\\alura-api-movie\\api-movie.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Edson\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\Edson\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",

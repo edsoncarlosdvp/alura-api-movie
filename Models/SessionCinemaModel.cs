@@ -11,5 +11,7 @@ namespace api_movie.Models
         [Required]
         public int MovieId { get; set; }
         public virtual MovieModel Movie { get; set; }
+        public int? CinemaId { get; set; }
+        public virtual CinemaModel Cinema { get; set; }
     }
 }

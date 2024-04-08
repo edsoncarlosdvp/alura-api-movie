@@ -5,7 +5,7 @@
 namespace apimovie.Migrations
 {
     /// <inheritdoc />
-    public partial class Movie : Migration
+    public partial class Session : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

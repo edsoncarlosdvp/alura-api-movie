@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\Alura\\Backend\\api-movie\\api-movie.csproj": {}
+    "D:\\Projects\\Alura\\Backend\\alura-api-movie\\api-movie.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\Alura\\Backend\\api-movie\\api-movie.csproj": {
+    "D:\\Projects\\Alura\\Backend\\alura-api-movie\\api-movie.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\Alura\\Backend\\api-movie\\api-movie.csproj",
+        "projectUniqueName": "D:\\Projects\\Alura\\Backend\\alura-api-movie\\api-movie.csproj",
         "projectName": "api-movie",
-        "projectPath": "D:\\Projects\\Alura\\Backend\\api-movie\\api-movie.csproj",
+        "projectPath": "D:\\Projects\\Alura\\Backend\\alura-api-movie\\api-movie.csproj",
         "packagesPath": "C:\\Users\\Edson\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\Alura\\Backend\\api-movie\\obj\\",
+        "outputPath": "D:\\Projects\\Alura\\Backend\\alura-api-movie\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Edson\\AppData\\Roaming\\NuGet\\NuGet.Config",
